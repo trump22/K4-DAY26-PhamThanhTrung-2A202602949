@@ -1,0 +1,124 @@
+{
+  "model": "gemini-3.5-flash",
+  "source": "Actual ADK session API after browser chat; opaque thought signatures omitted",
+  "events": [
+    {
+      "author": "user",
+      "timestamp": 1791980502.9992764,
+      "parts": [
+        {
+          "text": "Thời tiết hiện tại ở Hà Nội thế nào? Hãy gọi get_current_weather và trả lời bằng tiếng Việt với nhiệt độ, cảm giác như, độ ẩm, UV và thời điểm cập nhật từ tool."
+        }
+      ]
+    },
+    {
+      "author": "weather_agent",
+      "timestamp": 1791980506.9291368,
+      "parts": [
+        {
+          "functionCall": {
+            "id": "call_996960",
+            "args": {
+              "city": "Hanoi"
+            },
+            "name": "get_current_weather"
+          }
+        }
+      ]
+    },
+    {
+      "author": "weather_agent",
+      "timestamp": 1791980510.0586476,
+      "parts": [
+        {
+          "functionResponse": {
+            "id": "call_996960",
+            "name": "get_current_weather",
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "\nCurrent Weather for Hanoi, , Vietnam:\n\nTemperature: 29.4°C (84.9°F)\nFeels like: 32.2°C (90.0°F)\nCondition: Overcast\nHumidity: 63%\nWind: 18.4 km/h (11.4 mph) SSE\nPressure: 1013.0 mb\nUV Index: 0.0\nVisibility: 7.5 km\n\nLast updated: 2026-10-14 19:00\n"
+                }
+              ],
+              "structuredContent": {
+                "result": "\nCurrent Weather for Hanoi, , Vietnam:\n\nTemperature: 29.4°C (84.9°F)\nFeels like: 32.2°C (90.0°F)\nCondition: Overcast\nHumidity: 63%\nWind: 18.4 km/h (11.4 mph) SSE\nPressure: 1013.0 mb\nUV Index: 0.0\nVisibility: 7.5 km\n\nLast updated: 2026-10-14 19:00\n"
+              },
+              "isError": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "author": "weather_agent",
+      "timestamp": 1791980510.0750723,
+      "parts": [
+        {
+          "text": "Thời tiết hiện tại ở Hà Nội như sau:\n\n- **Nhiệt độ:** 29.4°C\n- **Cảm giác như:** 32.2°C\n- **Độ ẩm:** 63%\n- **Chỉ số UV:** 0.0\n- **Thời điểm cập nhật:** 2026-10-14 19:00"
+        }
+      ]
+    },
+    {
+      "author": "user",
+      "timestamp": 1791980552.5558927,
+      "parts": [
+        {
+          "text": "Hãy gọi get_forecast(city=\"Tokyo\", days=3). Trả dự báo thời tiết 3 ngày ở Tokyo bằng tiếng Việt, gồm ngày, nhiệt độ cao/thấp và khả năng mưa cho từng ngày từ dữ liệu tool."
+        }
+      ]
+    },
+    {
+      "author": "weather_agent",
+      "timestamp": 1791980552.837449,
+      "parts": [
+        {
+          "functionCall": {
+            "id": "call_902498",
+            "args": {
+              "days": 3,
+              "city": "Tokyo"
+            },
+            "name": "get_forecast"
+          }
+        }
+      ]
+    },
+    {
+      "author": "weather_agent",
+      "timestamp": 1791980555.730098,
+      "parts": [
+        {
+          "functionResponse": {
+            "id": "call_902498",
+            "name": "get_forecast",
+            "response": {
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Weather Forecast for Tokyo, Tokyo, Japan:\n---\n\n2026-10-14:\nHigh: 28.1°C (82.6°F)\nLow: 20.7°C (69.2°F)\nCondition: Sunny\nChance of Rain: 36%\nMax Wind: 20.9 km/h\nUV Index: 3.9\n\n---\n\n2026-10-15:\nHigh: 21.8°C (71.3°F)\nLow: 18.6°C (65.4°F)\nCondition: Overcast\nChance of Rain: 7%\nMax Wind: 16.6 km/h\nUV Index: 3.7\n\n---\n\n2026-10-16:\nHigh: 24.9°C (76.9°F)\nLow: 19.8°C (67.7°F)\nCondition: Overcast\nChance of Rain: 14%\nMax Wind: 16.9 km/h\nUV Index: 4.6\n"
+                }
+              ],
+              "structuredContent": {
+                "result": "Weather Forecast for Tokyo, Tokyo, Japan:\n---\n\n2026-10-14:\nHigh: 28.1°C (82.6°F)\nLow: 20.7°C (69.2°F)\nCondition: Sunny\nChance of Rain: 36%\nMax Wind: 20.9 km/h\nUV Index: 3.9\n\n---\n\n2026-10-15:\nHigh: 21.8°C (71.3°F)\nLow: 18.6°C (65.4°F)\nCondition: Overcast\nChance of Rain: 7%\nMax Wind: 16.6 km/h\nUV Index: 3.7\n\n---\n\n2026-10-16:\nHigh: 24.9°C (76.9°F)\nLow: 19.8°C (67.7°F)\nCondition: Overcast\nChance of Rain: 14%\nMax Wind: 16.9 km/h\nUV Index: 4.6\n"
+              },
+              "isError": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "author": "weather_agent",
+      "timestamp": 1791980555.7504258,
+      "parts": [
+        {
+          "text": "Dự báo thời tiết 3 ngày tới tại Tokyo:\n\n1. **Ngày 14/10/2026:**\n   - **Nhiệt độ:**"
+        },
+        {
+          "text": " Cao nhất 28.1°C / Thấp nhất 20.7°C\n   - **Khả năng mưa:** 36%\n\n2. **Ngày 15/10/2026:**\n   - **Nhiệt độ:** Cao nhất 21.8°C / Thấp nhất 18.6°C\n   - **Khả năng mưa:** 7%\n\n3. **Ngày 16/10/2026:**\n   - **Nhiệt độ:** Cao nhất 24.9°C / Thấp nhất 19.8°C\n   - **Khả năng mưa:** 14%"
+        }
+      ]
+    }
+  ]
+}

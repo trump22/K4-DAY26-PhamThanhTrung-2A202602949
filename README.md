@@ -1,5 +1,12 @@
 # Phân biệt MCP và Function Calling
 
+## Bài nộp Lab26 — Phạm Thanh Trung · 2A202602949 · K4
+
+Xem [báo cáo thực nghiệm và hướng dẫn chạy lại](LAB26_REPORT.md), [ảnh bằng chứng](screenshots/) và [log gốc](screenshots/logs/).
+Model thực nghiệm là **Gemini 3.5 Flash** theo lựa chọn sinh viên. Các bước 01–03 dùng dữ liệu mock của đề; agent ADK ở Lab04 gọi **WeatherAPI thật qua MCP Streamable HTTP**. Key chỉ lưu trong `.env` local; dùng `.env.example` để cấu hình key của riêng bạn.
+
+---
+
 Đây là hai khái niệm hay bị nhầm lẫn nhưng thực ra ở **hai tầng khác nhau**, và **bổ sung cho nhau** chứ không thay thế.
 
 ## Cấu trúc repo
