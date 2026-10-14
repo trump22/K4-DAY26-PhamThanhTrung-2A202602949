@@ -44,7 +44,7 @@ Hanoi, cập nhật **2026-10-14 19:00**: nhiệt độ **29.4°C**, cảm giác
 4. **Auth sai: 401 thay vì 403 được mô tả trong hướng dẫn.** SDK MCP 2.3.0 từ chối bearer không hợp lệ bằng 401. Đây là hành vi thực tế của transport, không phải tool chạy thành công hay lỗi cần bỏ auth. Giữ nguyên xác thực.
 5. **`verify_setup.py` in 10 ký tự đầu key.** Chỉ đổi dòng in thành `configured (value hidden)` để ảnh không lộ key; giữ nguyên mọi điều kiện kiểm tra. Không sửa hoặc thêm test để đổi kết quả.
 6. **Cảnh báo thư viện.** `google.generativeai` trong script kiểm tra dependency đã deprecated; chương trình gọi model thực tế dùng `google.genai`/ADK. Auth demo có cảnh báo cấu hình audience của MCP SDK. Đây là demo token tĩnh local, không tuyên bố sẵn sàng triển khai bảo mật production.
-7. **Ảnh chụp trình duyệt.** Công cụ có lúc timeout và trả vùng trống rất lớn. Chỉ cắt vùng trống quanh ảnh ADK và chuyển ảnh sang PNG; không sửa nội dung câu hỏi/câu trả lời.
+7. **Ảnh chụp trình duyệt.** Công cụ có lúc timeout và trả vùng trống rất lớn. Chỉ cắt vùng trống quanh ảnh bằng chứng và chuyển ảnh sang PNG; không sửa nội dung câu hỏi/câu trả lời.
 
 Auth server ở cổng 8000 đã dừng sau demo để giải phóng cổng cho ADK. MCP WeatherAPI chạy ở 8085; ADK web ở 8000. Dùng biến `PORT=8085` để server chọn Streamable HTTP khi chạy từ shell không có TTY, đúng nhánh có sẵn trong starter.
 
